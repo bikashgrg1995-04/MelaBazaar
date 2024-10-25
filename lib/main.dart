@@ -4,9 +4,11 @@ import 'package:get/get.dart';
 import 'package:task/others/binding.dart';
 import 'package:task/routes/app_routes.dart';
 import 'package:task/views/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,

@@ -15,6 +15,7 @@ class ProductsController extends GetxController {
       ProductDetail().obs; // Reactive variable for product
 
   RxList<String> imageList = <String>[].obs;
+  RxList<ProductDetail> cartList = <ProductDetail>[].obs;
 
   // Constructor to initialize Dio
   ProductsController() {
